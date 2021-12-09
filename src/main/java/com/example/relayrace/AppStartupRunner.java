@@ -10,4 +10,10 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 public class AppStartupRunner implements ApplicationRunner {
 
+    private final RaceSimulationService simulation;
+
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+        simulation.simulate(6, 4);
+    }
 }
