@@ -38,7 +38,7 @@ public class RaceSimulationService {
         However in production environment it's more safe to use a solution which enables execution
         on a dedicated thread pool (instead of the common fork-join pool), especially if it's not a CPU bound task,
         thus applying a 'bulkhead pattern'. A dedicated thread pool also enables more accurate unit testing of the concurrency.
-        In this task I rather stayed on what Java can provide out of the box, but Reactive extensions,
+        In this task I rather stayed with what Java can provide out of the box, but Reactive extensions,
         such as Reactor and RxJava gives much more features and convenience.
          */
 

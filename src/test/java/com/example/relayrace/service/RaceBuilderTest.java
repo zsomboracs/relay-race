@@ -20,7 +20,7 @@ import static org.mockito.Mockito.when;
 
 class RaceBuilderTest {
 
-    private static int LOWER_BOUND_IN_MILLIS = 9500;
+    private static int LOWER_BOUND_IN_MILLIS = 9000;
     private static int UPPER_BOUND_IN_MILLIS = 10500;
 
     @Mock
@@ -39,7 +39,6 @@ class RaceBuilderTest {
 
     @Test
     void shouldBuildEmptyRace() {
-
         // when
         List<Team> result = builder.build(0, 0);
 

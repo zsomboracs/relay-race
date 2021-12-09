@@ -49,7 +49,7 @@ class RaceSimulationServiceTest {
         MockitoAnnotations.openMocks(this);
     }
 
-    private static Stream<Arguments> simulateScenarios() {
+    private static Stream<Arguments> scenarios() {
         return Stream.of(
                 Arguments.of(
                         "Empty race, no teams",
@@ -85,7 +85,7 @@ class RaceSimulationServiceTest {
     }
 
     @ParameterizedTest
-    @MethodSource("simulateScenarios")
+    @MethodSource("scenarios")
     void shouldSimulateRace(String name, int numberOfTeams, int teamSize,
                             List<Team> teams, List<TeamResult> results,
                             long minDuration, long maxDuration) {

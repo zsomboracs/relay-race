@@ -18,7 +18,7 @@ public class RaceBuilder {
 
     private static final String TEAM_NAME_PATTERN = "Team %d";
 
-    private static int LOWER_BOUND_IN_MILLIS = 9500;
+    private static int LOWER_BOUND_IN_MILLIS = 9000;
     private static int UPPER_BOUND_IN_MILLIS = 10500;
 
     private final Random random;
